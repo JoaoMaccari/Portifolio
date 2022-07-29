@@ -9,6 +9,12 @@ body{
     background-color: rgb(46, 44, 44);
 }
 
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
 .center{
     width: 100%;
     max-width: 1480px;
@@ -68,6 +74,37 @@ header{
     margin-top: 25px;
 }
 
+#meusProjetos{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 22px;
+    text-align: center;
+}
+
+.card{
+    border: 1px solid yellow;
+    flex-shrink: 0;
+    width: 47%;
+    margin-bottom: 25px;
+    height: 350px;
+    /* max-height: 350px; */
+    overflow: hidden;
+    
+    
+}
+
+
 footer{
     background-color: #333;
     text-align: center;
@@ -76,4 +113,26 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+
+@media screen and (min-width: 940px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px){
+   
+    .card {
+        width: 100%;
+    }
+
+    .titulos{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+    }
 }
