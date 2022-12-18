@@ -1,138 +1,127 @@
+
+
+
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Josefin Sans', sans-serif;
 }
 
-body{
-    background-color: rgb(46, 44, 44);
-}
-
-.main-container{
-    width: 100vw;
+.background{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    align-items: center ;
+    justify-content:  space-between;
+    padding: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav h2{
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+
+span{
+    color: #f9004d;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transform: scale(1.2);
+}
+
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.Main{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50);
+}
+
+h4{
+    color: #fcfcfc;
+    letter-spacing: 2ps;
+    font-size: 20px;
+}
+
+h1{
+    color: #fff;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.Container-btn form{
+    width: 380px;
+    max-width: 100%;
     position: relative;
 }
 
-.center{
-    width: 100%;
-    max-width: 1480px;
-    padding: 0 2%;
-    margin: 0 auto;
-    display: flex;
-}
-
-header{
-    margin: 20px 0;
-}
-
-.space-around{
-    justify-content: space-between;
-}
-
-.logo h2{
-    color: white;
-}
-
-.menu-btn{
+.Container-btn form input:first-child{
     display: inline-block;
-}
-
-.menu-items a{
-    display: inline-block;
-    color: white;
-    margin: 0 14px;
-    text-decoration: none;
-}
-
-.menu-items a.active{
-    color: orangered;
-}
-
-.menu-btn button{
-    border: 1px solid white;
-    padding: 10px 15px;
-    color: white;
-    background-color: transparent;
-    border-radius: 9px;
-    margin: 0 10px;
-    font-size: 19px;
-    cursor: pointer;
-}
-
-
-.menu-btn button:hover{
-    background-color: orangered;
-}
-
-.main-1 h1{
-    font-size: 70px;
-    background-image: linear-gradient(145deg, #f81f01, #ee076e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 25px;
-}
-
-#meusProjetos{
-    margin-top: 100px;
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-
-
-
-.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 22px;
-    text-align: center;
-}
-
-.card{
-    border: 1px solid yellow;
-    flex-shrink: 0;
-    width: 47%;
-    margin-bottom: 25px;
-    height: 350px;
-    /* max-height: 350px; */
-    overflow: hidden;
-    
-    
-}
-
-
-footer{
-    background-color: #333;
-    text-align: center;
-    padding: 8px;
-    color: white;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    padding: 14px 130px 14px 15px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.Container-btn form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: #fff;
+    box-shadow: 0px 0px 15px #858585 ;
+    right: 6px;
+    top:6px;
 }
 
 
-@media screen and (min-width: 940px) {
-    .card {
-        width: 30%;
-    }
-}
 
-@media screen and (max-width: 640px){
-   
-    .card {
-        width: 100%;
-    }
 
-    .titulos{
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-
-    }
-}
