@@ -1,11 +1,11 @@
 
-const btn = document.getElementById("btn")
 
 
-const menu = document.getElementById("menu")
-const container = document.querySelector(".container")
-
-btn.addEventListener('click', function(){
-    menu.classList.toggle("collapsed");
-    container.classList.toggle("opacity")
-})
+function abrirmenu(){
+    let BarraMenuAberto = document.getElementById('barra-menu')
+    if(BarraMenuAberto.style.width == "0px"){
+        BarraMenuAberto.style.width = "180px";
+    }else{
+        BarraMenuAberto.style.width = "0px";
+    }
+}
