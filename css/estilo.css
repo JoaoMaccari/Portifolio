@@ -13,10 +13,9 @@
 
 .background{
     background: linear-gradient(90deg, rgba(111,255,233,1) 15%, rgba(93,197,191,1) 51%, rgba(76,138,149,1) 78%, rgba(58,80,107,1) 100%);
-    background-size: cover;
-    background-position: center;
+   
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .navbar{
@@ -310,6 +309,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -330,7 +330,7 @@ button:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
 .card-wrapper p{
@@ -339,7 +339,7 @@ button:hover{
     opacity: 0;
     font-weight: bold;
     text-transform: uppercase;
-    transition: 0.5 ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .card:hover{
@@ -352,19 +352,12 @@ button:hover{
     opacity: 1;
 }
 
-.card:hover > .card-wrapper ´{
+.card:hover > .card-wrapper p{
     opacity: 1;
     visibility: visible;
     font-size: 14px;
 }
 
-.Card i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
-    color: #f9004d;
-}
 
 footer{
     position: relative;
@@ -424,8 +417,9 @@ footer p{
     font-size: 14px ;
 }
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 375px)  {
 
+   
     .navbar {
         display: none;
 
@@ -476,46 +470,53 @@ footer p{
     }
 
     .main-sobre img{
-        width: 280px;
+        width: 250px;
         height: auto;
         border-radius: 50px;
-        margin-left: -180px;
+        margin-left: -80px;
         margin-bottom: 35px;
        
     }
 
-    .Text-sobre ,h2{
-        margin-left: -180px;
+    .main-sobre h2{
+        font-size: 30px;
+        margin-left: -450px;
 
     }
 
-    .Text-sobre h5{
-        margin-left: -180px;
+    .main-sobre h5{
+        margin-left: -430px;
     }
 
     .Text-sobre p{
         font-size: 15px;
-        width: 350px;
-        margin-left: 15px;
+        width: 303px;
+        margin-left: -73px;
     }
 
     .Text-sobre button{
-        margin-left: -180px ;
+        margin-left: -398px ;
     }
 
     /*      SERVIÇOS            */
     .card-container{
-        width: 280px;
-        margin-left: 25px;
+        width: 250px;
+        margin-left: 5px;
         margin-bottom: 35px;
         display: block;
 
     }
 
+    .card-container .card{
+        width: 280px;
+        height: 280px;
+    }
+
     .card-text{
         width: 300px;
-        margin-left: 100px;
+        margin-left: 55px;
         margin-bottom: 35px;
+        text-align: left;
     }
 
 
