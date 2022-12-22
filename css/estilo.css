@@ -13,19 +13,20 @@
 
 .background{
     background: linear-gradient(90deg, rgba(111,255,233,1) 15%, rgba(93,197,191,1) 51%, rgba(76,138,149,1) 78%, rgba(58,80,107,1) 100%);
-   
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
+/*                                                  NAV                                                        */
 .navbar{
-    display: flex;
-    align-items: center ;
-    justify-content:  space-between;
-    padding: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+   display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    
 }
+
 
 .logo {
     color: #1E1E2A;
@@ -35,7 +36,7 @@
 }
 
 span{
-    color: #f9004d;
+    color: #CC4545;
 }
 
 
@@ -53,24 +54,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f9004d;
+    color: #CC4545;
     transform: scale(1.2);
 }
 
-.btn{
-    background-color: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: transform .4s;
-}
 
-.btn:hover{
-    transform: scale(1.2);
-}
+
+ /*                                                                MAIN  / SOCIAL                                                                   */
 
 .Main{
     position: absolute;
@@ -80,7 +70,7 @@ nav ul li a:hover {
 }
 
 .Main span{
-    color: #f9004d;
+    color: #CC4545;
 }
 
 
@@ -128,20 +118,7 @@ h3{
 
 
 
-
-.background-color-Sobre{
-    display: flex;
-    background: linear-gradient(90deg, rgba(111,255,233,1) 15%, rgba(93,197,191,1) 51%, rgba(76,138,149,1) 78%, rgba(58,80,107,1) 100%);
-    width: 100%;
-    padding: 100px 0px;
-    
-}
-
-.background-color-Sobre img{
-    border-radius: 15px;
-    width: 430px;
-    height: auto;
-}
+/*                                                                          MENU LATERAL                                                                              */
 
 aside{
     position: absolute;
@@ -162,20 +139,21 @@ aside{
     
 }
 
- #barra-menu{
-    background-color:#191919 ;
+
+#barra-menu{
+    background-color:#fff ;
     height:100vh ;
     width: 0px;
     transition: 0.3s all;
 }
 
-#barra-menu ul li{
+#barra-menu ul li {
     list-style: none;
     padding: 15px ;
 }
 
 #barra-menu ul li a{
-    color: #fff;
+    color: #1E1E2A;
     text-decoration: none;
     font-size: 15px;
     width: 100%;
@@ -191,14 +169,23 @@ aside{
 
 }  
 
-.C-icon{
-    margin-top: 100%;
+
+/*                                                             SOBRE                                                                          */
+
+.background-color-Sobre{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-    overflow: hidden;
+    background: linear-gradient(90deg, rgba(111,255,233,1) 15%, rgba(93,197,191,1) 51%, rgba(76,138,149,1) 78%, rgba(58,80,107,1) 100%);
+    width: 100%;
+    padding: 100px 0px;
+    
 }
+
+.background-color-Sobre img{
+    border-radius: 15px;
+    width: 200%;
+    height: auto;
+}
+
 
 .Text-sobre{
     width: 550px;
@@ -206,6 +193,7 @@ aside{
 
 .main-sobre{
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: space-around;
     gap: 50px;
@@ -214,57 +202,27 @@ aside{
 }
 
 .Text-sobre h2{
-    color: #fff;
-    font-size: 75px;
+    color: #1E1E2A;
+    font-size: 50px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    margin-left: 130px;
 }
 
-.Text-sobre h5{
-    color: #fff;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-}
 
 .Text-sobre p{
-    color: #fcfc;
+    color: #1E1E2A;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+    margin-left: 100px;
+    text-align: justify;
     
 }
 
-button{
-    background-color: #f9004d;
-    color: #fff;
-    text-transform: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 20px;
-    border-radius: 30px;
-    transition: .4s;
-    
-}
 
-button:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
-
-.title h2{
-    color: #fff;
-    font-size: 75px;
-    width: 1130px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-
-                /*            PROJETOS                 */
+                /*                                                        PROJETOS                                                                                                   */
 .Container-serviços{
     height: auto;
     width: 100%;
@@ -313,6 +271,14 @@ button:hover{
     position: relative;
 }
 
+.card-wrapper a{
+    text-decoration: none;
+    color: #1E1E2A;
+}
+
+
+
+
 .card-wrapper::before{
     content: '';
     position: absolute;
@@ -333,13 +299,14 @@ button:hover{
     transition: 0.5s ease-in-out;
 }
 
-.card-wrapper p{
+.card-wrapper p {
     font-size: 0;
     visibility: visible;
     opacity: 0;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
+    
 }
 
 .card:hover{
@@ -358,11 +325,12 @@ button:hover{
     font-size: 14px;
 }
 
-
+/*                                                                    FOOTER                                                                                */
 footer{
     position: relative;
+    padding: 15px 0;
     width: 100%;
-    height: 400px;
+    height: 150px;
     background: linear-gradient(90deg, rgba(111,255,233,1) 15%, rgba(93,197,191,1) 51%, rgba(76,138,149,1) 78%, rgba(58,80,107,1) 100%);
     display: flex;
     flex-direction: column;
@@ -370,31 +338,16 @@ footer{
     justify-content: center;
 }
 
-footer h6{
-    font-size: 35px;
-    color: #fff;
-}
-
-footer p{
-    color: #fff;
-    font-size: 15px;
-    width: 500px;
-    text-align: center;
-    margin-top: 15px;
-    letter-spacing: 1px;
-    line-height: 23px;
-}
-
 .Redes-sociais{
     display: flex;
-    
+    margin-top: 10px;
 }
 
 .Redes-sociais a{
-    background-color: #f9004d;
+    background-color: #CC4545;
     width: 45px;
     height: 45px;
-    padding: 15px;
+    padding: 15px ;
     border-radius: 50%;
     margin: 22px 10px;
     color: #fff;
@@ -411,39 +364,37 @@ footer p{
 }
 
 .end{
-    position: absolute;
-    color: #f9004d;
+    
+    color: #1E1E2A;
     bottom: 35px;
-    font-size: 14px ;
+    
 }
 
-@media screen and (max-width: 375px)  {
 
-   
-    .navbar {
-        display: none;
 
+
+@media screen and (max-width: 500px)  {
+
+    .navbar{
+        display: block;
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 25px 0;
+        background-color: white;
+        
+    }
+
+    hr{
+        color: #101010;
     }
     
-    .icon-menu .menu{
-        display: block;
-    }
-
-    #barra-menu{
-        height: 100vh;
-        z-index: 1;
-    }
-
-    .C-icon{
-        background-color: #f9004d;
-        color: #fff;
-        text-transform: none;
-        border: 2px solid transparent;
-        font-weight: bold;
-        padding: 10px 5px;
-        border-radius: 30px;
-        width: 150px;
-        margin-left: 15px;
+    .cabeçalho-link{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        
     }
 
     .Main h1,h3{
@@ -462,6 +413,12 @@ footer p{
         display: flex;
         align-items: center;
         text-align: center;
+        
+    }
+
+    .Main{
+        top:60%;
+        left: 25%;
         
     }
 

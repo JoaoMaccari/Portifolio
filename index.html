@@ -13,29 +13,26 @@
 
 
     <div class="background">
-        <nav class="navbar">
+        <nav class="navbar" >
 
-            <h2 class="logo">Portfo<span>lio</span></h2>
+            <h2 class="logo" id="Logo">Portfo<span>lio</span></h2>
             <ul class="cabeçalho-link">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">serviços</a></li>
-                <li><a href="#">habilidades</a></li>
-                <li><a href="#">contatos</a></li>
-                
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="#Sobre">sobre</a></li>
+                <li><a href="#Servicos">serviços</a></li>
+                <li><a href="#Contatos">contatos</a></li>
             </ul>
-            <a href="#" class="btn">Subscribe</a>
         </nav>
            
-        <div class="Main">
+        <div class="Main" id="main">
             <h4> Olá, meu nome é</h4>
             <h1>João Elias <span>Maccari</span></h1>
             <h3>Desenvolvedor web</h3>
 
             
             <div class="social">
-                <a href="#">Linkedin</a>
-                <a href="#">Github</a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-elias-maccari-99568a259/ " target="_blank" rel="external">Linkedin</a>
+                <a href="https://github.com/JoaoMaccari" target="_blank" rel="external">Github</a>
             </div>
         </div>
 
@@ -49,12 +46,11 @@
 
             <div id="barra-menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">sobre</a></li>
-                    <li><a href="#">serviços</a></li>
-                    <li><a href="#">habilidades</a></li>
-                    <li><a href="#">contatos</a></li>
-                    <a href="#" class="C-icon">Subscribe</a>
+                    <li><a href="#main">Inicio</a></li>
+                    <li><a href="#Sobre">sobre</a></li>
+                    <li><a href="#Servicos">serviços</a></li>
+                    <li><a href="#Contato">contatos</a></li>
+                    
                 </ul>
                 
             </div>
@@ -65,26 +61,26 @@
     <!--Começo-da-seção-sobre-->
 
     <section class="background-color-Sobre">
-        <div class="main-sobre">
+        <div class="main-sobre" id="Sobre">
             <img src="./img/foto.jpg">
             <div class="Text-sobre">
-                <h2>Sobre-Mim</h2>
-                <h5>Desenvolvedor <span>& designer</span></h5>
-                <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos e imagem de desing perfeito. E também fazer o website mais & mais interativo e com animação web. E posso Deixar seu site responsivo, e que ele acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
-                <button type="button">Vamos conversar</button><!--Button-->
+                <h2>Sobre</h2>
+                
+                <p>Meu nome é João Elias Maccari e sou um apaixonado por internet e tecnologia, o que me levou a entrar no mundo do desenvolvimento Web. Tenho conhecimento na área de FrontEnd e no momento estou focando em tecnologias voltadas ao BackEnd.</p>
+                
             </div><!--Text-sobre-->
         </div><!--main-sobre-->
     </section><!--background-color-Sobre-->
 
 
     <!-- CARD COM OS PROJETOS -->
-    <div class="Container-serviços">
+    <div class="Container-serviços" id="Servicos">
 
         <div class="card-container">
             <div class="card">
                 <div class="card-wrapper">
                     <h2>Projeto 1</h2>
-                    <p>Vem Ver</p>
+                    <p><a href="">Vem Ver</a> </p>
                 </div>
 
             </div>
@@ -96,8 +92,8 @@
         <div class="card-container">
             <div class="card">
                 <div class="card-wrapper">
-                    <h2>Projeto 1</h2>
-                    <p>Vem Ver</p>
+                    <h2>Projeto 2</h2>
+                    <p><a href="">Vem Ver</a> </p>
                 </div>
 
             </div>
@@ -109,8 +105,8 @@
         <div class="card-container">
             <div class="card">
                 <div class="card-wrapper">
-                    <h2>Projeto 1</h2>
-                    <p>Vem Ver</p>
+                    <h2>Projeto 3</h2>
+                    <p><a href="">Vem Ver</a> </p>
                 </div>
 
             </div>
@@ -123,17 +119,21 @@
     </div>
 
      <!--Rodapé--->
-        <footer>
-            <h6>joão Elias Maccari</h6>
-            <div class="Redes-sociais">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-            </div>
-            <p class="end">Feito por João Elias Maccari</p>
-        </footer>
+        
 
+            <footer id="Contatos">
+                
+                <div class="Redes-sociais">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <h3 class="end">Feito por João Elias Maccari</h3>
+            </footer>
+        
   <script src="./js/script.js"></script>
+
+  <script src="https://kit.fontawesome.com/ff80571bf4.js" crossorigin="anonymous"></script>
     
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
