@@ -385,6 +385,14 @@ footer{
         
     }
 
+    .background{
+        width: 100vh;
+    }
+
+    .background-color-Sobre{
+        width: 100vh;
+    }
+
     hr{
         color: #101010;
     }
