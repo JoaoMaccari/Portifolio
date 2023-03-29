@@ -385,14 +385,6 @@ footer{
         
     }
 
-    .background{
-        width: 100vh;
-    }
-
-    .background-color-Sobre{
-        width: 100vh;
-    }
-
     hr{
         color: #101010;
     }
@@ -416,7 +408,7 @@ footer{
         margin-left: -2px;
     }
 
-    /*          SOBRE             */
+    
     .background-color-Sobre{
         display: flex;
         align-items: center;
@@ -463,7 +455,7 @@ footer{
         margin-left: -398px ;
     }
 
-    /*      SERVIÇOS            */
+   
     .card-container{
         width: 250px;
         margin-left: 5px;
